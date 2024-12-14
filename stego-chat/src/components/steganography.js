@@ -1,6 +1,7 @@
 export default class Steganography {
   static encodeMessage(text) {
-    const image = `${process.env.PUBLIC_URL}/images/image.png`;
+    const imNum = Math.floor(Math.random() * 5);
+    const image = `${process.env.PUBLIC_URL}/images/image${imNum}.png`;
 
     return new Promise((resolve, reject) => {
       const canvas = document.createElement("canvas");
@@ -10,6 +11,7 @@ export default class Steganography {
       img.onload = () => {
         try {
           console.log("Image loaded successfully:", img.width, "x", img.height);
+          console.log("Using image:", imNum);
           canvas.width = img.width;
           canvas.height = img.height;
           ctx.drawImage(img, 0, 0);
