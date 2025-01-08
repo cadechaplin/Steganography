@@ -1,5 +1,3 @@
-Here's a cleaned-up and well-formatted version of your README file:
-
 ```markdown
 # Stego Chat
 
@@ -122,5 +120,3 @@ While this application uses steganography to hide messages, it should not be con
 - Added consistent spacing between sections.
 - Formatted code blocks for better readability.
 - Improved sentence flow where necessary.
-
-This version is clear, professional, and easy to read. Let me know if you'd like further refinements!
